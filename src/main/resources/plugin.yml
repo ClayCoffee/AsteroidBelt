@@ -1,0 +1,5 @@
+name: AsteroidBelt
+main: club.claycoffee.AsteroidBelt.AsteroidBelt
+version: 1.0.0
+api-version: 1.14
+depend: [CS-CoreLib, Slimefun, ClayTech]
