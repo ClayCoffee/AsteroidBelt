@@ -15,7 +15,7 @@ import com.narcissu14.spacetech.generator.SpaceGenerator;
 import club.claycoffee.ClayTech.api.Planet;
 import club.claycoffee.ClayTech.utils.Utils;
 
-public class AsteroidBelt extends JavaPlugin{
+public class AsteroidBelt extends JavaPlugin {
 	public static String locale;
 	public static DataYML currentLangYML;
 	public static FileConfiguration currentLang;
@@ -24,13 +24,13 @@ public class AsteroidBelt extends JavaPlugin{
 	private static boolean is115 = true;
 	private static boolean compatible = true;
 	public static AsteroidBelt instance;
-	
-	@SuppressWarnings("static-access")
+
+	@SuppressWarnings({ "static-access", "unused" })
 	public void onEnable() {
 		instance = this;
 		// boolean habitable, int gravity, int distance, int harmlevel, boolean cold
 		Utils.info("Launching... By ClayCofee & Narcissu14");
-		
+
 		this.saveDefaultConfig();
 		FileConfiguration config = this.getConfig();
 		locale = config.getString("Locale");
@@ -99,8 +99,13 @@ public class AsteroidBelt extends JavaPlugin{
 		if (!is115) {
 			Utils.info(Lang.readGeneralText("Before_115"));
 		}
-		
-		Planet AsteroidBelt = new Planet("CAsteroidBelt",Utils.newItemD(Material.COBBLESTONE, Lang.readPlanetsText("AsteroidBelt")),new SpaceGenerator(),Environment.THE_END,false,6,30,1,true);
+		Metrics mt = new Metrics(this, 6894);
+
+		Planet AsteroidBelt = new Planet("CAsteroidBelt",
+				Utils.newItemD(Material.COBBLESTONE, Lang.readPlanetsText("AsteroidBelt")), new SpaceGenerator(),
+				Environment.THE_END, false, 6, 30, 1, true);
 		AsteroidBelt.register();
+
+		this.getServer().getPluginManager().registerEvents(new BeltListener(), this);
 	}
 }

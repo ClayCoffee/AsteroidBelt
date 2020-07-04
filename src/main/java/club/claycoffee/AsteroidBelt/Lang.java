@@ -22,8 +22,8 @@ public class Lang {
 			return Arrays.asList(new String[] { "Missing locale." });
 		} else {
 			return Utils.replaceList(
-					((List<String>) AsteroidBelt.currentLangYML.getCustomConfig().getList("Items." + name + "_LORE")), "&",
-					"§");
+					((List<String>) AsteroidBelt.currentLangYML.getCustomConfig().getList("Items." + name + "_LORE")),
+					"&", "§");
 		}
 	}
 
@@ -63,7 +63,8 @@ public class Lang {
 		if (AsteroidBelt.currentLangYML.getCustomConfig().getString("MachineRecipes." + name) == null) {
 			return "Missing locale.";
 		} else {
-			return AsteroidBelt.currentLangYML.getCustomConfig().getString("MachineRecipes." + name).replaceAll("&", "§");
+			return AsteroidBelt.currentLangYML.getCustomConfig().getString("MachineRecipes." + name).replaceAll("&",
+					"§");
 		}
 	}
 
