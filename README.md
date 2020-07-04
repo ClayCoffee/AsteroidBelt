@@ -1,6 +1,6 @@
 # AsteroidBelt
-一个我的世界粘土科技附属.
-A ClayTech addon for minecraft.
+一个我的世界粘土科技附属.  
+A ClayTech addon for minecraft.  
 感谢 Narcissu14 为本项目提供世界生成器源码. Thank you!
 
 # Supported Languages
@@ -12,3 +12,4 @@ A ClayTech addon for minecraft.
 # Supported Minecraft Server Version
 * Spigot / PaperSpigot 1.14.x
 * Spigot / PaperSpigot 1.15.x
+* Spigot / PaperSpigot 1.16.x
