@@ -64,13 +64,11 @@
   			</exclusion>
   		</exclusions>
   	</dependency>
-  	<dependency>
-            <groupId>club.claycoffee</groupId>
-            <artifactId>ClayTech</artifactId>
-            <version>1.1.0-SNAPSHOT-7</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/ClayTech-1.1.0-SNAPSHOT-7.jar</systemPath>
-    </dependency>
+<dependency>
+	    <groupId>com.github.ClayCoffee</groupId>
+	    <artifactId>ClayTech</artifactId>
+	    <version>master-SNAPSHOT</version>
+	</dependency>
    </dependencies>
    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
