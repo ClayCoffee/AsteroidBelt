@@ -1,5 +1,5 @@
 General:
   Before_115: "&cYour server api version is before 1.15,the plugin also can run, but might cause some items can't register."
-  Not_compatible: "&cSorry.The plugin doesn't compatible your server version.Supported Server Version: 1.14.x, 1.15.x.Please upgrade your server!"
+  Not_compatible: "&cSorry.The plugin doesn't compatible your server version.Supported Server Version: 1.14.x, 1.15.x, 1.16.x.Please upgrade your server!"
 Planets:
  AsteroidBelt: "&6Asteroid Belt"
