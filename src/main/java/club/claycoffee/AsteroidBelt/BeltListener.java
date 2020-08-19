@@ -14,8 +14,8 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerTeleportEvent.TeleportCause;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import club.claycoffee.ClayTech.ClayTech;
-import club.claycoffee.ClayTech.api.ClayTechManager;
+import cn.claycoffee.ClayTech.ClayTech;
+import cn.claycoffee.ClayTech.api.ClayTechManager;
 
 public class BeltListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)

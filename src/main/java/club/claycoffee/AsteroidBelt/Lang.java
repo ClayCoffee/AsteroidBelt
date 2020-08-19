@@ -3,7 +3,7 @@ package club.claycoffee.AsteroidBelt;
 import java.util.Arrays;
 import java.util.List;
 
-import club.claycoffee.ClayTech.utils.Utils;
+import cn.claycoffee.ClayTech.utils.Utils;
 
 public class Lang {
 	public static String[] LocaleList = { "zh-CN", "zh-TW", "en-UK", "en-US" };

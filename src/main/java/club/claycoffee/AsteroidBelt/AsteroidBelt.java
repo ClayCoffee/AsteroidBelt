@@ -3,6 +3,7 @@ package club.claycoffee.AsteroidBelt;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import cn.claycoffee.ClayTech.ClayTech;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.World.Environment;
@@ -12,8 +13,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.narcissu14.spacetech.generator.SpaceGenerator;
 
-import club.claycoffee.ClayTech.api.Planet;
-import club.claycoffee.ClayTech.utils.Utils;
+import cn.claycoffee.ClayTech.api.Planet;
+import cn.claycoffee.ClayTech.utils.Utils;
 
 public class AsteroidBelt extends JavaPlugin {
 	public static String locale;
@@ -102,6 +103,8 @@ public class AsteroidBelt extends JavaPlugin {
 			Utils.info(Lang.readGeneralText("Before_115"));
 		}
 		Metrics mt = new Metrics(this, 6894);
+		mt.addCustomChart(new Metrics.SimplePie("language", () -> languageCodeToLanguage(locale)));
+		mt.addCustomChart(new Metrics.SimplePie("claytech_version", () -> ClayTech.getInstance().getPluginVersion()));
 
 		Planet AsteroidBelt = new Planet("CAsteroidBelt",
 				Utils.newItemD(Material.COBBLESTONE, Lang.readPlanetsText("AsteroidBelt")), new SpaceGenerator(),
@@ -109,5 +112,20 @@ public class AsteroidBelt extends JavaPlugin {
 		AsteroidBelt.register();
 
 		this.getServer().getPluginManager().registerEvents(new BeltListener(), this);
+	}
+
+	private String languageCodeToLanguage(String code) {
+		switch (code.toUpperCase()) {
+			case "ZH-CN":
+				return "Simplified Chinese";
+			case "ZH-TW":
+				return "Traditional Chinese";
+			case "EN-US":
+				return "English(US)";
+			case "EN-UK":
+				return "English(UK)";
+			default:
+				return code;
+		}
 	}
 }

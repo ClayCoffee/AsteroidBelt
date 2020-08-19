@@ -18,8 +18,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: net.md-5:bungeecord-chat:1.15-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.yaml:snakeyaml:1.25" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.github.TheBusyBiscuit:CS-CoreLib:master-v1.6.1-g6a39a9e-114" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.github.TheBusyBiscuit:Slimefun4:master-RC-7-g41e52b5-1247" level="project" />
-    <orderEntry type="library" name="Maven: com.github.ClayCoffee:ClayTech:master-5a4c89a664-1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.github.TheBusyBiscuit:CS-CoreLib:master-v1.6.1-g9dd4a1c-118" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.github.TheBusyBiscuit:Slimefun4:master-RC-7-g6be0709-1666" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ClayCoffee:ClayTech:master-19d38e9a90-1" level="project" />
   </component>
 </module>
