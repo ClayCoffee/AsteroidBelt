@@ -1,4 +1,4 @@
-package club.claycoffee.AsteroidBelt;
+package cn.claycoffee.AsteroidBelt;
 
 import java.util.Arrays;
 import java.util.List;

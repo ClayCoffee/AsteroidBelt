@@ -1,6 +1,6 @@
 name: AsteroidBelt
-main: club.claycoffee.AsteroidBelt.AsteroidBelt
-version: 1.0.3
+main: cn.claycoffee.AsteroidBelt.AsteroidBelt
+version: 1.0.4
 api-version: 1.14
 depend: [CS-CoreLib, Slimefun, ClayTech]
 loadbefore: [Multiverse-Core]

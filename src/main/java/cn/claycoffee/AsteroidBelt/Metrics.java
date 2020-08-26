@@ -1,4 +1,4 @@
-package club.claycoffee.AsteroidBelt;
+package cn.claycoffee.AsteroidBelt;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

@@ -1,4 +1,4 @@
-package club.claycoffee.AsteroidBelt;
+package cn.claycoffee.AsteroidBelt;
 
 import java.io.File;
 import java.io.IOException;
