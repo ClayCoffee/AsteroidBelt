@@ -82,6 +82,8 @@ public class AsteroidBelt extends JavaPlugin {
         currentLangYML.saveCustomConfig();
         currentLangYML.reloadCustomConfig();
         switch (version) {
+            case "v1_16_R3":
+                break;
             case "v1_16_R2":
                 break;
             case "v1_16_R1":
